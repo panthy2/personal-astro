@@ -1,21 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';;
-import { Base,Header,Hero,Experience,Footer, FeaturedProjects, Divider } from '../components';
+import { Base, Header, Hero, Experience, Footer, FeaturedProjects, Divider } from '../components';
 ---
-<Base>
-    <Header/>
-    <Hero/>
-    <Experience/>
-    <Divider/>
-    <FeaturedProjects/>
-    <Divider/>
-    <Footer/>
 
-    </Base>
+<Layout title="Welcome">
+	<Base>
+	<Header />
+	<Hero />
+	<Experience />
+	<Divider />
+	<FeaturedProjects />
+	<Divider />
+	<Footer />
+
+	</Base>
+</Layout>
 
 <style>
 	:root {
-		--astro-gradient: linear-gradient(0deg,#4F39FA, #DA62C4);
+		--astro-gradient: linear-gradient(0deg, #4F39FA, #DA62C4);
 	}
 
 	h1 {
@@ -24,7 +27,7 @@ import { Base,Header,Hero,Experience,Footer, FeaturedProjects, Divider } from '.
 
 	main {
 		margin: auto;
-    	padding: 1em;
+		padding: 1em;
 		max-width: 60ch;
 	}
 
@@ -40,8 +43,15 @@ import { Base,Header,Hero,Experience,Footer, FeaturedProjects, Divider } from '.
 	}
 
 	@keyframes pulse {
-		0%, 100% { background-position-y: 0%; }
-		50% { background-position-y: 80%; }
+
+		0%,
+		100% {
+			background-position-y: 0%;
+		}
+
+		50% {
+			background-position-y: 80%;
+		}
 	}
 
 	.instructions {
@@ -59,6 +69,7 @@ import { Base,Header,Hero,Experience,Footer, FeaturedProjects, Divider } from '.
 		border-radius: 4px;
 		padding: 0.15em 0.25em;
 	}
+
 	.link-card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
