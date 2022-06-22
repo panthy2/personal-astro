@@ -1,4 +1,4 @@
-import { FaLongArrowAltRight } from "react-icons/fa";
+
 function Hero() {
   return (
     <section className="flex flex-col ">
@@ -20,10 +20,7 @@ function Hero() {
       <div className=" mt-[60px] flex items-center gap-3">
         <p className=" text-[24px]">Say hi</p>
         <a href={"https://www.linkedin.com/in/fahadalhatshami/"}>
-        <FaLongArrowAltRight
-          className=" hover:cursor-pointer hover:text-[#666]"
-          size={30}
-        /></a>
+   </a>
       </div>
     </section>
   );
