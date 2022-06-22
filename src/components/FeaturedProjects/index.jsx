@@ -1,7 +1,4 @@
 import { useEffect, useState } from "react";
-import { BsGithub, BsLink, Bsa45Deg } from "react-icons/bs";
-
-
 
 
 function FeaturedProjects() {
@@ -39,14 +36,14 @@ function FeaturedProjects() {
                       <div className="">
                       <a href={project?.html_url || "/"}>
                         <a>
-                          <BsGithub />
+                          
                         </a>
                       </a>
                       </div>
                       <div className="ml-3" >
                       <a className="" href={project.description?.split("|")[2] || "/"}>
                         <a>
-                          <Bsa45Deg />
+            
                         </a>
                       </a>
                       </div>

@@ -1,5 +1,4 @@
 import { useTheme } from 'next-themes'
-import { BsFillSunFill } from 'react-icons/bs'
 function Header() {
     const { theme, setTheme } = useTheme()
 
@@ -34,7 +33,7 @@ function Header() {
                             }
                             className=" "
                         >
-                            <BsFillSunFill size={22} />
+                        
                         </button>
                     </nav>
                 </div>
